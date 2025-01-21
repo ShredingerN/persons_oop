@@ -3,7 +3,7 @@ class Student : Person
     // 
     public Student(string name, int age, string schoolName) : base(name, age)
     {
-        this.SchoolName = schoolName;
+        SchoolName = schoolName;
     }
 
     public string SchoolName { get; set; }

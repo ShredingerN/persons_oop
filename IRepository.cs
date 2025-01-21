@@ -1,0 +1,6 @@
+
+interface IRepository :IRepo<Person>
+{
+
+
+}

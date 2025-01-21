@@ -7,5 +7,8 @@ Teacher teacher = new("Jon", 45, "Math");
 Repository repository = new Repository(10);
 repository.Append(person1, person2, student, teacher, employee);
 
+NewRepository newRepo = new();
+newRepo.Append(person1, person2, student, teacher, employee);
+
 Printer printer= new();
-printer.Print(repository);
+printer.Print(newRepo);

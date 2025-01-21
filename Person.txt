@@ -1,0 +1,45 @@
+class Person
+{
+    // Поля класса, не должны быть открытыми
+    private string name;
+    private int age;
+
+    // Конструктор класса, отвечает за инициализацию начального состояния
+    public Person(string n, int a)
+    {
+        name = n;
+        age = a;
+
+    }
+    
+    // Свойства, которыми мы заменили методы ниже
+    public string Name
+    {
+        get { return name; }
+        private set { name = value; }
+    }
+    public int Age
+    {
+        get { return age; }
+        private set { age = value; }
+    }
+
+    // //Методы чтения
+    // public string GetName()
+    // {
+    //     return name;
+    // }
+    //  public int GetAge()
+    // {
+    //      return age;
+    // }
+    // Методы на установку значения
+    // public void SetName(string n)
+    // {
+    //     name = n;
+    // }
+    // public void SetAge(int a)
+    // {
+    //     age = a;
+    // }
+}
